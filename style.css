@@ -1,0 +1,64 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: lightblue;
+  transition: 0.5s;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.container span {
+  text-align: center;
+  margin-top: 70px;
+  width: 30px;
+  height: 20px;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: gray;
+  border-radius: 3px;
+}
+
+.dynamic-video {
+  transition: 0.5s ease-in-out; /* Atur durasi dan jenis transisi sesuai kebutuhan */
+}
+
+.slidee {
+  transition: 0.3s;
+}
+
+.marquee {
+  background-color: none;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 50%; /* nilai ini harus lebih besar dari atau sama dengan lebar teks Anda */
+  animation: marquee 10s linear infinite; /* sesuaikan durasi animasi sesuai kebutuhan */
+  text-align: center;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
