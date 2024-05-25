@@ -4,7 +4,7 @@ move.classList.add(`slidee`);
 move.addEventListener(`click`, function () {
   move.style.position = `relative`;
   const x = Math.round(Math.random() * 150 + 1);
-  const y = Math.round(Math.random() * 300 + 1);
+  const y = Math.round(Math.random() * 150 + 1);
   move.style.top = y + "px";
   move.style.right = x + "px";
 });
